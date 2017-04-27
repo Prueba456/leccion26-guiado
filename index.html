@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <form class="" action="index.html" method="post">
+  <label for="nombre">Nombre</label>
+  <input id="nombre" type="text" name="nombre" value="" pattern="[A-Z]{1}[a-z]*" title="Primera letra en mayuscula" required><br>
+
+  <label for="apellido">Apellido</label>
+  <input type="text" name="apellido" value="" pattern="[A-Z]{1}[a-z]*" title="Primera letra en mayuscula" required><br>
+
+  <label for="DNI">DNI</label>
+  <input type="text" name="DNI" value="" pattern="[0-9]{8}" title="Ingrese solo 8 numeros" required><br>
+
+  <label for="fecha">Fecha de nacimiento</label>
+  <input type="text" name="fecha" value="" pattern="([1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/](19|20)\d\d" title="formato de fecha dd/mm/aa"  required><br>
+
+  <label for="numero">Numero de celular</label>
+  <input type="text" name="numero" value="" pattern="[9]{1}[0-9]{8}" title="Ingrese solo 9 numeros"  required><br>
+
+  <label for="casa">Numero de casa</label>
+  <input type="text" name="casa" value="" pattern="[2-8]{1}[0-9]{6}" title="Ingrese solo 7 numeros"  required><br>
+
+  <label for="contraseña">Contraseña</label>
+  <input type="text" name="contraseña" value="" required><br>
+
+  <label for="confirmar">Confirmar</label>
+  <input type="text" name="confirmar" value="" required><br>
+  
+  <label for="comentarios">Comentarios</label>
+  <textarea name="comentarios" rows="8" cols="80"></textarea><br>
+  <input type="checkbox" name="condiciones" value="2" required>Terminos y condiciones <br>
+  <button type ="submit">Enviar</button>
+  </form>
+  <script src="js/app.js" charset="utf-8"></script>
+</body>
+</html>
