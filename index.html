@@ -19,7 +19,7 @@
   <input type="text" name="DNI" value="" pattern="[0-9]{8}" title="Ingrese solo 8 numeros" required><br>
 
   <label for="fecha">Fecha de nacimiento</label>
-  <input type="text" name="fecha" value="" pattern="([1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/](19|20)\d\d" title="formato de fecha dd/mm/aa"  required><br>
+  <input type="text" name="fecha" value="" pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" title="formato de fecha dd/mm/aa"  required><br>
 
   <label for="numero">Numero de celular</label>
   <input type="text" name="numero" value="" pattern="[9]{1}[0-9]{8}" title="Ingrese solo 9 numeros"  required><br>
@@ -28,11 +28,11 @@
   <input type="text" name="casa" value="" pattern="[2-8]{1}[0-9]{6}" title="Ingrese solo 7 numeros"  required><br>
 
   <label for="contraseña">Contraseña</label>
-  <input type="text" name="contraseña" value="" required><br>
+  <input id="contras" type="text" name="contraseña" value=""  pattern="[0-9a-z]{6,}"  title="Contraseña minimo de 6 caracteres" required><br>
 
   <label for="confirmar">Confirmar</label>
-  <input type="text" name="confirmar" value="" required><br>
-  
+  <input id="confir" type="text" name="confirmar" value="" required><br>
+
   <label for="comentarios">Comentarios</label>
   <textarea name="comentarios" rows="8" cols="80"></textarea><br>
   <input type="checkbox" name="condiciones" value="2" required>Terminos y condiciones <br>
