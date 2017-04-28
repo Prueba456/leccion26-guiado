@@ -8,36 +8,38 @@
   <title>Document</title>
 </head>
 <body>
-  <form class="" action="index.html" method="post">
+  <div class="cuadro">
+  <form class="" form="form1" action="index.html" method="post">
   <label for="nombre">Nombre</label>
-  <input id="nombre" type="text" name="nombre" value="" pattern="[A-Z]{1}[a-z]*" title="Primera letra en mayuscula" required><br>
+  <input id="nombre" type="text" name="nombre" value="" pattern="[A-Z]{1}[a-z]*" title="Primera letra en mayuscula" required><br><br>
 
   <label for="apellido">Apellido</label>
-  <input type="text" name="apellido" value="" pattern="[A-Z]{1}[a-z]*" title="Primera letra en mayuscula" required><br>
+  <input type="text" name="apellido" value="" pattern="[A-Z]{1}[a-z]*" title="Primera letra en mayuscula" required><br><br>
 
   <label for="DNI">DNI</label>
-  <input type="text" name="DNI" value="" pattern="[0-9]{8}" title="Ingrese solo 8 numeros" required><br>
+  <input type="text" name="DNI" value="" pattern="[0-9]{8}" title="Ingrese solo 8 numeros" required><br><br>
 
   <label for="fecha">Fecha de nacimiento</label>
-  <input type="text" name="fecha" value="" pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" title="formato de fecha dd/mm/aa"  required><br>
+  <input type="text" name="fecha" value="" pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" title="formato de fecha dd/mm/aa"  required><br><br>
 
   <label for="numero">Numero de celular</label>
-  <input type="text" name="numero" value="" pattern="[9]{1}[0-9]{8}" title="Ingrese solo 9 numeros"  required><br>
+  <input type="text" name="numero" value="" pattern="[9]{1}[0-9]{8}" title="Ingrese solo 9 numeros"  required><br><br>
 
   <label for="casa">Numero de casa</label>
-  <input type="text" name="casa" value="" pattern="[2-8]{1}[0-9]{6}" title="Ingrese solo 7 numeros"  required><br>
+  <input type="text" name="casa" value="" pattern="[2-8]{1}[0-9]{6}" title="Ingrese solo 7 numeros"  required><br><br>
 
   <label for="contraseña">Contraseña</label>
-  <input id="contras" type="text" name="contraseña" value=""  pattern="[0-9a-z]{6,}"  title="Contraseña minimo de 6 caracteres" required><br>
+  <input id="contras" type="password" name="contrasena" value=""  pattern="[0-9a-z]{6,}"  title="Contraseña minimo de 6 caracteres" required><br><br>
 
   <label for="confirmar">Confirmar</label>
-  <input id="confir" type="text" name="confirmar" value="" required><br>
+  <input id="confir" type="password" name="confirmar" value="" required><br><br>
 
   <label for="comentarios">Comentarios</label>
-  <textarea name="comentarios" rows="8" cols="80"></textarea><br>
-  <input type="checkbox" name="condiciones" value="2" required>Terminos y condiciones <br>
-  <button type ="submit">Enviar</button>
+  <textarea id ="comentarios" name="comentarios" rows="5" cols="50"></textarea><br><br>
+  <input id = "check" type="checkbox" name="condiciones" value="2" required>Terminos y condiciones <br><br>
+  <input id="enviar" type ="submit"></input>
   </form>
+</div>
   <script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
